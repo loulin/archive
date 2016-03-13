@@ -1,0 +1,15 @@
+<html>
+<head>
+    <script src="./jsbridge.js"></script>
+    <script type="text/javascript">
+        var result = window.jsbridge.plugins.CoreNativeApi.callNative("index.html");
+        alert(result);
+        document.cookie = "cookieKey=cookieValue";
+        alert(document.cookie);
+    </script>
+</head>
+
+<body>
+    <h1>Test Page</h1>
+</body>
+</html>
